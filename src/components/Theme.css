@@ -1,0 +1,103 @@
+:root {
+  --mainColor: #2196f3;
+  --hoverColor: #5bacdf;
+  --backgroundColor: #f1f8fc;
+  --darkOne: #252525;
+  --darkTwo: #45424b;
+  --lightOne: #919191;
+  --lightTwo: #ffffff;
+}
+
+.lightMode,
+.lightMode .MuiList-root,
+.lightMode .link-area {
+  background-color: var(--backgroundColor);
+}
+.swal2-popup {
+  position: relative !important;
+  margin-top: -64px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+}
+.swal2-confirm {
+  background-color: #2196f3 !important;
+  width: 100px;
+}
+.swal2-confirm:focus {
+  box-shadow: none !important;
+}
+
+.lightMode .MuiAppBar-root,
+.lightMode footer {
+  background-color: var(--mainColor) !important;
+}
+.lightMode footer {
+  color: var(--lightTwo);
+}
+.darkMode .swal2-html-container {
+  color: var(--lightOne);
+}
+.lightMode input:-webkit-autofill,
+.lightMode input:-webkit-autofill:hover,
+.lightMode input:-webkit-autofill:focus,
+.lightMode textarea:-webkit-autofill,
+.lightMode textarea:-webkit-autofill:hover,
+.lightMode textarea:-webkit-autofill:focus,
+.lightMode select:-webkit-autofill,
+.lightMode select:-webkit-autofill:hover,
+.lightMode .darkMode select:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--darkOne);
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 0px 1px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+footer span {
+  color: red;
+}
+.lightMode h1 {
+  color: var(--darkOne);
+}
+.darkMode .MuiList-root,
+.darkMode .swal2-success-circular-line-right,
+.darkMode .swal2-success-circular-line-left,
+.darkMode .MuiAppBar-root,
+.darkMode footer,
+.darkMode .swal2-popup {
+  background-color: var(--darkOne);
+}
+.darkMode input:-webkit-autofill,
+.darkMode input:-webkit-autofill:hover,
+.darkMode input:-webkit-autofill:focus,
+.darkMode textarea:-webkit-autofill,
+.darkMode textarea:-webkit-autofill:hover,
+.darkMode textarea:-webkit-autofill:focus,
+.darkMode select:-webkit-autofill,
+.darkMode select:-webkit-autofill:hover,
+.darkMode select:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--lightTwo);
+  border-radius: 50px;
+  caret-color: var(--lightTwo);
+  -webkit-box-shadow: 0 0 0 30px var(--darkTwo) inset !important;
+}
+
+.darkMode,
+.darkMode .link-area {
+  background-color: var(--darkTwo);
+}
+.darkMode h1,
+.darkMode h2,
+.darkMode .MuiList-root,
+.darkMode footer {
+  color: var(--lightTwo);
+}
+.darkMode .MuiOutlinedInput-input {
+  color: var(--lightTwo);
+  border-radius: 50px;
+}
+
+.darkMode .MuiFormHelperText-root,
+.darkMode .MuiOutlinedInput-input::placeholder {
+  color: var(--lightTwo);
+}
